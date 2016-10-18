@@ -1,11 +1,11 @@
 {
-  "name": "ps-node",
+  "name": "ps-node-raw",
   "version": "0.1.4",
   "description": "A process lookup utility",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/neekey/ps.git"
+    "url": "git://github.com/mquinnv/ps.git"
   },
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha -t 0 -R spec test/test.js",
