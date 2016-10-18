@@ -41,7 +41,13 @@ describe('test', function () {
       PS.lookup({pid: String(pid)}, function (err, list) {
         assert.equal(list.length, 1);
         assert.equal(list[0].arguments[0], serverPath);
+        done();
+      });
+    });
 
+    it('contains raw output', function (done) {
+      PS.lookup({pid: String(pid)}, function (err, list) {
+        assert(list[0].raw);
         done();
       });
     });
